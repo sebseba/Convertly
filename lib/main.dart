@@ -14,6 +14,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:share_plus/share_plus.dart';
 
 /// Seçili dili (Locale) tutar
 final ValueNotifier<Locale?> appLocale = ValueNotifier<Locale?>(null);
@@ -1332,11 +1333,45 @@ class _ImageConverterScreenState extends State<ImageConverterScreen> {
               ),
             ),
           ),
+          const SizedBox(height: 12),
+          SizedBox(
+            width: double.infinity,
+            child: ElevatedButton.icon(
+              onPressed: _shareImageFile,
+              icon: const Icon(Icons.share, color: Colors.white),
+              label: Text(
+                context.l10n.shareFile ?? 'Paylaş',
+                style: const TextStyle(color: Colors.white, fontSize: 16),
+              ),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color(0xFF6B46C1),
+                padding: const EdgeInsets.symmetric(vertical: 14),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
   }
 
+  Future<void> _shareImageFile() async {
+    if (_convertedImageBytes == null) return;
+    try {
+      final tempDir = await getTemporaryDirectory();
+      final timestamp = DateTime.now().millisecondsSinceEpoch;
+      final filePath = '${tempDir.path}/converted_$timestamp.${_selectedFormat.toLowerCase()}';
+      final file = File(filePath);
+      await file.writeAsBytes(_convertedImageBytes!);
+
+
+      await Share.shareXFiles([XFile(filePath)], text: 'Convertly ile dönüştürdüğüm dosya!');
+    } catch (e) {
+    _showErrorMessage('Paylaşım başarısız: \$e');
+    }
+  }
   Widget _buildBottomNavBar() {
     return BottomNavigationBar(
       currentIndex: _selectedBottomNavIndex,

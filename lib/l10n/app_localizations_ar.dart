@@ -104,4 +104,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get sourceOffline => 'المصدر: دون اتصال';
+
+  @override
+  String get shareFile => 'يشارك';
 }

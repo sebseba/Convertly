@@ -103,4 +103,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get sourceOffline => '来源：离线';
+
+  @override
+  String get shareFile => 'Share';
 }

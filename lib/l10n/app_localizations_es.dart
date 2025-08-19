@@ -104,4 +104,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get sourceOffline => 'Fuente: Offline';
+
+  @override
+  String get shareFile => 'Share';
 }

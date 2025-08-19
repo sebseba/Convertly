@@ -31,5 +31,6 @@
   "cancel": "取消",
   "done": "完成",
   "sourceOnline": "来源：CloudConvert",
-  "sourceOffline": "来源：离线"
+  "sourceOffline": "来源：离线",
+  "shareFile": "Share"
 }

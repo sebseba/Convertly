@@ -31,5 +31,6 @@
   "cancel": "Annuler",
   "done": "Terminé",
   "sourceOnline": "Source : CloudConvert",
-  "sourceOffline": "Source : Hors ligne"
+  "sourceOffline": "Source : Hors ligne",
+  "shareFile": "Share"
 }

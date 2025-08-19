@@ -103,4 +103,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get sourceOffline => 'Источник: Офлайн';
+
+  @override
+  String get shareFile => 'Share';
 }

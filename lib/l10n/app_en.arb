@@ -31,5 +31,7 @@
   "cancel": "Cancel",
   "done": "Done",
   "sourceOnline": "Source: CloudConvert",
-  "sourceOffline": "Source: Offline fallback"
+  "sourceOffline": "Source: Offline fallback",
+  "shareFile": "Share"
+
 }

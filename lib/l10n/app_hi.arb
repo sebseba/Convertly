@@ -31,5 +31,6 @@
   "cancel": "रद्द करें",
   "done": "हो गया",
   "sourceOnline": "स्रोत: CloudConvert",
-  "sourceOffline": "स्रोत: ऑफ़लाइन"
+  "sourceOffline": "स्रोत: ऑफ़लाइन",
+  "shareFile": "Share"
 }

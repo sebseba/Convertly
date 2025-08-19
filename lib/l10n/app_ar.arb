@@ -31,5 +31,6 @@
   "cancel": "إلغاء",
   "done": "تم",
   "sourceOnline": "المصدر: CloudConvert",
-  "sourceOffline": "المصدر: دون اتصال"
+  "sourceOffline": "المصدر: دون اتصال",
+  "shareFile": "يشارك"
 }

@@ -104,4 +104,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get sourceOffline => 'Kaynak: Offline mod';
+
+  @override
+  String get shareFile => 'Paylaş';
 }

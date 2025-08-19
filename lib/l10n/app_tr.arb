@@ -31,5 +31,7 @@
   "cancel": "İptal",
   "done": "Tamam",
   "sourceOnline": "Kaynak: CloudConvert",
-  "sourceOffline": "Kaynak: Offline mod"
+  "sourceOffline": "Kaynak: Offline mod",
+  "shareFile": "Paylaş"
+
 }

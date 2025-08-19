@@ -31,5 +31,6 @@
   "cancel": "Abbrechen",
   "done": "Fertig",
   "sourceOnline": "Quelle: CloudConvert",
-  "sourceOffline": "Quelle: Offline"
+  "sourceOffline": "Quelle: Offline",
+  "shareFile": "Aktie"
 }

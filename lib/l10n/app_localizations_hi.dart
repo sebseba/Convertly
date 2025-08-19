@@ -103,4 +103,7 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get sourceOffline => 'स्रोत: ऑफ़लाइन';
+
+  @override
+  String get shareFile => 'Share';
 }

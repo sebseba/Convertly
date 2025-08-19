@@ -31,5 +31,6 @@
   "cancel": "Отмена",
   "done": "Готово",
   "sourceOnline": "Источник: CloudConvert",
-  "sourceOffline": "Источник: Офлайн"
+  "sourceOffline": "Источник: Офлайн",
+  "shareFile": "Share"
 }
