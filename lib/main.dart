@@ -15,6 +15,8 @@ import 'package:path_provider/path_provider.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:share_plus/share_plus.dart';
+import 'package:google_fonts/google_fonts.dart';
+
 
 /// Seçili dili (Locale) tutar
 final ValueNotifier<Locale?> appLocale = ValueNotifier<Locale?>(null);
@@ -131,16 +133,23 @@ class _ImageConverterScreenState extends State<ImageConverterScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          context.l10n.appTitle,
-          style: const TextStyle(
-            color: Colors.black,
-            fontSize: 24,
-            fontWeight: FontWeight.w500,
-          ),
+        title: Row(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: [
+            // "Conve" normal yazı
+            Text(
+              'Convertly',
+              style: GoogleFonts.pacifico(
+                textStyle: const TextStyle(
+                  fontSize: 36,
+                  color: Colors.black87,
+                ),
+              ),
+            ),
+          ],
         ),
-        backgroundColor: const Color(0xFFE8D5F0),
-        elevation: 0,
+
         centerTitle: true,
       ),
       body: _selectedBottomNavIndex == 0
